@@ -1,0 +1,103 @@
+.product {
+    height: 413px   ;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.item {
+    margin-left: auto;
+    margin-top: 25px;
+    max-width: 39%;
+    margin-right: auto;
+}
+
+.type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(30, 1%, 55%);
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Fraunces', sans-serif ;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px ;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: hsl(30, 1%, 55%);
+    line-height: 22px;
+    margin-bottom: 25px ;
+}
+
+span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.current-value {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 28px;
+    color: hsl(158, 36%, 37%);
+    margin-right: 15px;
+}
+
+.svg {
+    margin-right: 2px;
+}
+
+.old-value {
+    font-size:  14px;
+    color: hsl(30, 1%, 55%);
+    text-decoration:   line-through;
+}
+#button {
+    padding: 10px 59px;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white ;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700; 
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+#button:focus { 
+    background-color: hsl(157, 53%, 13%);
+
+}
+
+#button:hover {
+    background-color: hsl(157, 53%, 13%);
+}
+
+@media (max-width: 555px){
+    .product {
+        height: 42vh;
+        width: 87vw;
+        object-fit: cover;
+        object-position: 0px 34%;
+        border-radius: 9px 6px 0px 0px;
+    }
+    .item {
+        max-width: 77%;
+    }
+    #button {
+        padding: 13px 30%;
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 27px;
+    }
+
+}
